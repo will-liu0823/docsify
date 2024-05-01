@@ -23,4 +23,4 @@ if [ ${container_id} != "" ]; then
 fi
 
 # 4. 重新执行自动部署脚本
-./auto_deploy_docsify.sh
+sh ./auto_deploy_docsify.sh
