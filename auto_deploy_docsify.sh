@@ -9,4 +9,4 @@ cp ./Dockerfile ./blog/docs
 docker build -f ./blog/docs/Dockerfile -t docsify/blog .
 # 运行docker镜像，通过-p来修改默认的3000端口避免端口冲突
 # -v表示将:前面的目录(宿主机的目录)映射到容器的/docs目录
-docker run -dp 9001:9001 --name=docsify -v $(pwd)/blog/docs:/docs docsify/blog
+docker run -dp 3000:3000 --name=docsify -v $(pwd)/blog/docs:/docs docsify/blog
