@@ -2,7 +2,7 @@ name: auto deploy
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   deploy:
     runs-on:  VM-4-13-centos
