@@ -6,6 +6,7 @@
 3.  runs-on: self-hosted
 -   github-hosted
 1.  runs-on: ubuntu-latest
+
 ### Create secrets steps:
 -   dependabot secrets
 1.  SSH_HOST
