@@ -5,7 +5,8 @@ on:
       - main
 jobs:
   deploy:
-    runs-on:  VM-4-13-centos
+    runs-on:  self-hosted
+
     steps:
       - name: SSH 命令删除旧文件
         uses: appleboy/ssh-action@master
