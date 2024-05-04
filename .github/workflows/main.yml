@@ -18,5 +18,6 @@ jobs:
 
           # 先用 SSH 命令删除旧文件
           script: |
-            rm -rf /www/blog/*
+            cd /home/lighthouse
+            git pull
         
