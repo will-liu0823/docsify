@@ -15,4 +15,3 @@ jobs:
         run: |
           cd /home/lighthouse/actions-runner/_work/docsify/docsify
           sh auto_update_docsify.sh
-        
