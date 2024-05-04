@@ -12,8 +12,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: auto update
-        uses: appleboy/ssh-action@master
-        script: |
+        run: |
           cd /home/lighthouse/actions-runner/_work/docsify/docsify
           sh auto_update_docsify.sh
         
