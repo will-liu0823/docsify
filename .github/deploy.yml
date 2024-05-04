@@ -1,0 +1,23 @@
+name: auto deploy
+on:
+  push:
+    branches:
+      - master
+
+name: Release
+
+jobs:
+  deploy:
+    runs-on: light
+    steps:
+      - name: pull code
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{secrets.SSH_HOST}}
+        username: ${{ secrets.SSH_USERNAME }}
+        key:  ${{ secrets.SSH_KEY }}
+
+      script: |
+        cd /home/lighthouse/docsify
+        git pull
+
