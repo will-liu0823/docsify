@@ -19,6 +19,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.DEPLOY_KEY }}
           script: |
-            cd docsify
+            cd /home/lighthouse/actions-runner/_work/docsify/docsify
             sh auto_update_docsify.sh
         
