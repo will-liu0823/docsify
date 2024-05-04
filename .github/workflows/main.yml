@@ -18,7 +18,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.DEPLOY_KEY }}
-        script: |
-          cd docsify
-          sh auto_update_docsify.sh
+          script: |
+            cd docsify
+            sh auto_update_docsify.sh
         
