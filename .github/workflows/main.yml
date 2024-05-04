@@ -13,7 +13,7 @@ jobs:
 
       - name: auto update
         uses: appleboy/ssh-action@master
-          script: |
-            cd /home/lighthouse/actions-runner/_work/docsify/docsify
-            sh auto_update_docsify.sh
+        script: |
+          cd /home/lighthouse/actions-runner/_work/docsify/docsify
+          sh auto_update_docsify.sh
         
