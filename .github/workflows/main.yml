@@ -18,7 +18,7 @@ jobs:
         username: ${{ secrets.SSH_USERNAME }}
         key:  ${{ secrets.SSH_KEY }}
 
-      script: |
-        cd /home/lighthouse/docsify
-        git pull
+        script: |
+          cd /home/lighthouse/docsify
+          git pull
         
