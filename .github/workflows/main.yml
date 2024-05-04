@@ -4,8 +4,6 @@ on:
     branches:
       - master
 
-name: Release
-
 jobs:
   deploy:
     runs-on:  ubuntu-latest
