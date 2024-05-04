@@ -1,6 +1,6 @@
 FROM node:latest
 LABEL description="A demo Dockerfile for build Docsify."
-# 克隆仓库
+
 WORKDIR /
 COPY ./docsify_blog/docs ./docsify_blog/docs
 WORKDIR /docsify_blog/docs
