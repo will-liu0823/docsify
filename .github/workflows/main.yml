@@ -13,6 +13,11 @@ jobs:
 
       - name: auto update
         uses: appleboy/ssh-action@master
+        with:
+          # 这里配置对应仓库设置的变量，就可以避免服务器配置暴露
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.DEPLOY_KEY }}
         script: |
           cd docsify
           sh auto_update_docsify.sh
