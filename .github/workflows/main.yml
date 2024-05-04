@@ -10,4 +10,9 @@ jobs:
     steps:
       - name: SSH 命令删除旧文件
         uses: actions/checkout@v2
+
+      - name: auto update
+        script: |
+          cd docsify
+          sh auto_update_docsify.sh
         
