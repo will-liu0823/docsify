@@ -7,5 +7,5 @@
         -   [20240503](daily_improvement/20240503.md)
     -   [技术博客](tech_blog/README.md)
         -   [github_actions](tech_blog/github_actions.md)
-        -   [AI胖虎](tech_blog/ AI_tiger.md)
+        -   [AI胖虎](tech_blog/AI_tiger.md)
     -   [日常记录](life_record/README.md)
